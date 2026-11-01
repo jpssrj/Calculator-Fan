@@ -1,0 +1,1 @@
+"""Calculadora Fan Package"""
