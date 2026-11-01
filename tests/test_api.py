@@ -14,6 +14,13 @@ def test_health_check_endpoint():
     assert "Calculadora Fan" in data["service"]
 
 
+def test_serve_index_html():
+    response = client.get("/")
+    assert response.status_code == 200
+    assert "CALCULATOR FAN" in response.text
+    assert "text/html" in response.headers.get("content-type", "")
+
+
 def test_calculate_endpoint_success():
     payload = {"expression": "12.5 * (4 + 6) / 2"}
     response = client.post("/api/calculate", json=payload)
