@@ -1,4 +1,4 @@
-#🧮 CALCULATOR FAN — Calculadora Web Neubrutalista de Alta Precisão
+🧮 CALCULATOR FAN — Calculadora Web Neubrutalista de Alta Precisão
 
 Uma calculadora web com identidade visual autoral baseada no design **Neubrutalista** e arquitetura de software sólida no backend desenvolvida em **Python (FastAPI)**, sustentada por um interpretador seguro de Árvore de Sintaxe Abstrata (AST) e aritmética exata com `decimal.Decimal`.
 
