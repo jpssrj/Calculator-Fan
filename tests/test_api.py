@@ -57,3 +57,8 @@ def test_calculate_endpoint_security_block():
     data = response.json()
     assert data["status"] == "error"
     assert data["result"] is None
+
+
+def test_vercel_entrypoint_app():
+    from api.index import app as vercel_app
+    assert vercel_app.title == "Calculadora Fan"
